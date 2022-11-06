@@ -8,3 +8,4 @@ The website also consists of a store that provides categories of merchandise in 
 So this is my first project ever for W3Schools.com. 
 Since I am a newbie in front end web development who has completed the html tutorials and currently learning css tutorials from w3schools.com I think this project is the best that I can create right now. 
 I would like to thanks W3Schools.com, its discord members for help, motivation and the W3Schools event that started this project. 
+I have used Images from Google. And Fonts from "https://www.dafont.com/halloween-too.font" and "https://www.dafont.com/theme.php?cat=803&text=%26". 
