@@ -111,20 +111,12 @@ src:url('FREAKY HALLOWEEN.otf');
  /*Setting the style for the body section of index.html*/
  /*-----------------------------------------------------*/
 
-
- /*Setting the style for the audio element*/
- #audio {
-   display:none;
- }
-
  
  /*Setting the style for the first division "main1" of body section*/
  .main1 {
     background-image:url('Images/halloween-back-1.png');
     background-repeat:no-repeat;
     background-size:100% 100%;
-    width:100%;
-    height:auto;
     opacity:0.8;
     padding:8px;
     word-wrap:break-word;
@@ -137,7 +129,7 @@ src:url('FREAKY HALLOWEEN.otf');
     z-index:1;
  }
  .main11 h1 {
-    font-size:9vw;
+    font-size:7vw;
     font-family:"Halloween Too", "Times New Roman", serif;
     text-align:center;
     color:white;
