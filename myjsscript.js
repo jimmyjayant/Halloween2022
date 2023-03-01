@@ -27,3 +27,7 @@ function win2022() {
     document.getElementById('win2').src = "Images/winner-2022.jpg";
     document.getElementById('win3').src = "Images/winner-2022.jpg";
 }
+
+window.onload = function() {
+    document.getElementById("audio").play();
+}
