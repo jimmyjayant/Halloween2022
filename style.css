@@ -1,6 +1,15 @@
+/*Setting root element (html)*/
+html {
+   font-size:62.5%;
+   margin:0;
+   padding:0;
+}
+
 /*Setting body margin to 0*/
 body {
     margin:0;
+    padding:0;
+    min-height:100vh;
 }
 
 /*Setting the border-box property*/
@@ -27,17 +36,20 @@ src:url('FREAKY HALLOWEEN.otf');
     padding:0;
     background-color:#333;
     overflow:hidden;
+    display:flex;
+    flex-wrap:wrap;
+    min-height:3.9rem;
  }
- .hornavbar li {
-    float:left;
- }
+
  .hornavbar a {
-    display:inline-block;
+    display:block;
     text-decoration:none;
-    padding:8px 12px;
-    font-size:20px;
+    padding:0.8rem 1.2rem;
+    font-size:2rem;
     color:white;
+    text-align:center;
  }
+
  .hornavbar a:hover {
     background-color:white;
     color:black;
@@ -47,29 +59,28 @@ src:url('FREAKY HALLOWEEN.otf');
  /*Setting the style for the last division "footer" of body section*/
 
  .footer {
-    width:100%;
     background-color:#333;
     color:white;
-    font-size:30px;
+    font-size:3rem;
     text-align:center;
+    min-height:12rem;
  }
 
  .footer ul {
     list-style-type:none;
     margin:0;
-    padding:5px;
-    
- }
- .footer ul li {
-    display:inline-block;
+    padding:0;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
  }
 
  .footer a {
-    display:inline-block;
+    display:block;
     text-decoration:none;
     color:white;
     margin:0;
-    padding:8px 16px;
+    padding:0.8rem 1.6rem;
  }
 
  .footer a:hover {
@@ -81,14 +92,14 @@ src:url('FREAKY HALLOWEEN.otf');
  
  @media screen and (max-width:600px) {
     /*Setting breakpoints for horizontal navigation bar*/
-    .hornavbar li {
-        float:none;
-        text-align:center;
+    .hornavbar ul {
+       flex-direction:column;
+       justify-content:center;
     }
+     
     /*Setting breakpoints for footer*/
-    .footer ul li {
-        display:block;
-        text-align:center;
+    .footer ul {
+        flex-direction:column;
     }
     /*Setting breakpoints for history.html 6 divisions*/
     .his1, .his2, .his3, .his4, .his5, .his6 {
