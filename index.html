@@ -14,9 +14,11 @@
         <script src="myjsscript.js"></script>
     </head>
     <body>
+
         <audio id="audio" autoplay>
             <source src="audio/scream.mp3" type="audio/mp3">
         </audio>
+
     <div class="hornavbar">
         <ul>
         <li><a href="index.html">Home</a></li>
@@ -39,8 +41,8 @@
         <h2>
             Welcome to The HalloweenCon<sup>&trade;</sup>
         </h2>
-          
-         <p>
+
+        <p>
             It is the official organization that organize contest every year on the eve of Halloween. 
             <br>
             Every year we organize contest and choose the best 3 among the participants. 
@@ -53,12 +55,13 @@
             <br>
             Besides contest, the organization deals in Decorations, Collectibles, Accessories, Costumes (Girls, Boys, Toddler, Women, Men), Animatronics, etc. for the Halloween Event. 
             <br>
+            
                 So what are you waiting for? 
                 <br>
                 Register Yourself for the contest. 
                 <br>
                 Dress Up Scary and Horrifying and who knows you will be the Contest Winner of Halloween 2022. 
-          </p>
+        </p>
         
       </div>
     </div>
@@ -84,7 +87,7 @@
             <li>The third winner will be awarded a cash price of $100.</li>
             <li>The registration starts from 25 October and ends on 30 October.</li>
         </ol>
-     </div>
+    </div>
     </div>
 
     <div class="main3">
@@ -92,61 +95,116 @@
     <h2>
        & Register Yourself &
     </h2>
-
-    <form action="https://www.w3schools.com/action_page.php" method="post">
-    <label for="fname">
-        First Name:- 
-    </label>
-        <input class="fnameclass" type="text" id="fname" name="fname" placeholder="Enter Your First Name Here" maxlength="30" required>
-    <br>
-    <label for="mname">
-        Middle Name:- 
-    </label>
-        <input class="fnameclass" type="text" id="mname" name="mname" placeholder="Enter Your Middle Name Here" maxlength="30" required>
-    <br>
-    <label for="lname">
-        Last Name:- 
-    </label>
-        <input class="fnameclass" type="text" id="lname" name="lname" placeholder="Enter Your Last Name Here" maxlength="30" required>
-    <br>
-    <label>
-        Gender:- 
-    </label>
-    <input type="radio" id="male" name="gender" value="Male">
-    <label for="male" class="mradio">
-    Male
-    </label>
     
-    <input type="radio" id="female" name="gender" value="Female">
-    <label for="female" class="fradio">
-    Female
-    </label>
-    <br>
-    <label for="date">
-        Date Of Birth:- 
-    </label>
-    <input class="fnameclass" type="date" id="date" name="date" required>
-    <br>
-    <label for="mail">
-        Email:- 
-    </label>
-    <input class="fnameclass" type="email" id="mail" validate placeholder="example@abc.com" required>
-    <br>
-    <label for="phone">
-        Contact Number:- 
-    </label>
-    <input class="fnameclass" type="tel" id="phone" placeholder="Enter Your Contact Number Here" pattern="[0-9]{10}" required>
-    <br>
-    <label for="upload">
-        Upload Contest Selfie:- 
-    </label>
-    <input type="file" id="upload" name="upload" required>
-    <br>
-    <br>
-    <input class="subbut" type="submit" id="sub" name="sub" value="Submit">
-    <input class="res" type="reset">
+    <div class="formcontainer">
+      <form action="https://www.w3schools.com/action_page.php" method="post">
+        <div class="row">
+            <div class="col25">
+                <label for="fname">
+                    First Name:- 
+                </label>
+            </div>
+            <div class="col75">
+                <input class="fnameclass" type="text" id="fname" name="fname" placeholder="Enter Your First Name Here" maxlength="30" required>
+            </div>
+        </div>
 
+        <div class="row">
+            <div class="col25">
+                <label for="mname">
+                    Middle Name:- 
+                </label>
+            </div>
+            <div class="col75">
+                <input class="fnameclass" type="text" id="mname" name="mname" placeholder="Enter Your Middle Name Here" maxlength="30" required>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col25">
+                <label for="lname">
+                    Last Name:- 
+                </label>
+            </div>
+            <div class="col75">
+                <input class="fnameclass" type="text" id="lname" name="lname" placeholder="Enter Your Last Name Here" maxlength="30" required>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col25">
+                <label for="gender">
+                    Gender:- 
+                </label>
+            </div>
+            <div class="col75">
+                <input type="radio" id="male" name="gender" value="Male">
+                <label for="male" class="mradio">
+                Male
+                </label>
+                <input type="radio" id="female" name="gender" value="Female">
+                <label for="female" class="fradio">
+                Female
+                </label>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col25">
+                <label for="date">
+                    Date Of Birth:- 
+                </label>
+            </div>
+            <div class="col75">
+                <input class="fnameclass" type="date" id="date" name="date" required>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col25">
+                <label for="mail">
+                    Email:- 
+                </label>
+            </div>
+            <div class="col75">
+                <input class="fnameclass" type="email" id="mail" placeholder="example@abc.com" required>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col25">
+                <label for="phone">
+                    Contact Number:- 
+                </label>
+            </div>
+            <div class="col75">
+                <input class="fnameclass" type="tel" id="phone" placeholder="Enter Your Contact Number Here" pattern="[0-9]{10}" required>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col25">
+                <label for="upload">
+                    Upload Contest Selfie:- 
+                </label>
+            </div>
+            <div class="col75">
+                <input type="file" id="upload" name="upload" required>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col50">
+                <input class="subbut" type="submit" id="sub" name="sub" value="Submit">
+            </div>
+            <div class="col50">
+                <input class="res" type="reset">
+            </div>
+        </div> 
+   
     </form>
+    </div>
+
     </div>
 
     <div class="footer">
@@ -158,10 +216,12 @@
             <li><a href="contact.html">Contact</a></li>
         </ul>
         <ul>
-            <li><a href="https://www.facebook.com" target="_blank"><img src="Images/facebook.png" width="25" height="25" alt="facebook logo"></a></li>
-            <li><a href="https://www.twitter.com" target="_blank"><img src="Images/twitter.png" width="25" height="25" alt="twitter logo"></a></li>
-            <li><a href="https://www.instagram.com" target="_blank"><img src="Images/instagram.png" width="25" height="25" alt="instagram logo"></a></li>
+            <li><a href="https://www.facebook.com" target="_blank"><img src="Images/facebook.png" width="25" height="25" alt="Facebook logo"></a></li>
+            <li><a href="https://www.twitter.com" target="_blank"><img src="Images/twitter.png" width="25" height="25" alt="Twitter logo"></a></li>
+            <li><a href="https://www.instagram.com" target="_blank"><img src="Images/instagram.png" width="25" height="25" alt="Instagram logo"></a></li>
         </ul>
     </div>
+
+    
     </body>
 </html>
