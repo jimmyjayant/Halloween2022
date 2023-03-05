@@ -1,7 +1,3 @@
-window.onload = function() {
-    document.getElementById("audio").load();
-}
-
 function win2018() {
     document.getElementById('win1').src = "Images/winner-2018-1.webp";
     document.getElementById('win2').src = "Images/winner-2018-2.webp";
