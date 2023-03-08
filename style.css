@@ -72,6 +72,7 @@ src:url('FREAKY HALLOWEEN.otf');
     list-style-type:none;
     margin:0;
     padding:0;
+    overflow:hidden;
     display:flex;
     flex-wrap:wrap;
     justify-content:center;
@@ -82,7 +83,7 @@ src:url('FREAKY HALLOWEEN.otf');
     text-decoration:none;
     color:white;
     margin:0;
-    padding:0.2rem 1.6rem;
+    padding:0.5rem 1.6rem;
  }
 
  .footer a:hover {
@@ -108,8 +109,39 @@ src:url('FREAKY HALLOWEEN.otf');
     .his1, .his2, .his3, .his4, .his5, .his6 {
         height:auto;
         overflow:hidden;
+    }   
+
+    .winner {
+      flex-direction:column;
     }
 
+    .winner .container {
+      width:200px;
+      height:250px;
+    }
+
+    /*Setting breakpoints for store.html*/
+      body .store1 {
+      background-repeat:repeat-y;
+      background-size:auto;
+    }
+
+    .categories {
+      flex-direction:column;
+    }
+
+    .categories .categories1 {
+      width:200px;
+      height:250px;
+    }
+}
+
+@media screen and (min-width:600px) {
+   /*Setting the height of images of history.html*/
+   .hisimg {
+      height:70vh;
+   }
+}
     @media screen and (max-width:370px) {
       .main11 h1 {
          font-size:3rem;
@@ -124,46 +156,21 @@ src:url('FREAKY HALLOWEEN.otf');
          font-size:2rem;
       }
    }
-    /*
-    .main11 h1 {
-      font-size:5rem;
-      text-shadow:0.3rem 0.3rem black, 0.2rem 0.2rem grey;
-    }
 
-    .main11 h1 sup {
-      font-size:2rem;
-    }
+   @media screen and (max-width:480px) {
+      .main2 ol {
+         text-align:left;
+         list-style-position:outside;
+      }
+   }
 
-    .main11 h2 {
-      font-size:2rem;
-    }
-    .main11 p {
-      line-height:1.5;
-      font-size:1.5rem;
-    }
-
-    .main2 h2 {
-      font-size:2rem;
-      padding:0.6rem;
-    }
-
-    .main2 div {
-      font-size:2rem;
-    }
-
-    .main2 ol {
-      font-size:1.5rem;
-    }
-
-    .main3 h2 {
-      font-size:2rem;
-    }
-
-    */
+   @media screen and (max-width:420px) {
+      .main3 .fnameclass {
+         width:300px;
+      }
+   }
 
 
-
- }
 /*------------------------------------------------------*/
  /*Setting the style for the body section of index.html*/
  /*-----------------------------------------------------*/
@@ -177,7 +184,9 @@ src:url('FREAKY HALLOWEEN.otf');
     background-size:100% 100%;
     opacity:0.8;
     padding:1rem;
+    margin:0;
     overflow:auto;
+    text-align:center;
  }
 
 
@@ -193,30 +202,32 @@ src:url('FREAKY HALLOWEEN.otf');
  .main11 h1 {
     font-size:5rem;
     font-family:"Halloween Too", "Times New Roman", serif;
-    text-align:center;
     color:white;
     text-shadow:0.4rem 0.3rem #111, 0.5rem 0.4rem grey;
     margin:0;
  }
 
  .main11 h1 sup {
-   font-size:5rem;
-   text-shadow:0.3rem 0.3rem #111, 0.4rem 0.4rem grey;
+   text-shadow:0.1rem 0.2rem #111, 0.2rem 0.3rem grey;
  }
 
  .main11 h2 {
     font-size:3rem;
     color:coral;
-    text-align:center;
-    text-shadow:0.3rem 0.3rem black;
+    text-shadow:0.2rem 0.0rem black;
+    margin:0;
+    padding:2rem;
+ }
+
+ .main11 h2 sup {
+   text-shadow: 0.1rem 0.1rem black;
  }
 
  .main11 p {
     font-size:2rem;
     font-family:'Halloween Too', 'Times New Roman', serif;
     color:red;
-    text-align:center;
-    text-shadow: 0.2vw 0.2vw black;
+    text-shadow: 0.1rem 0.1rem black;
  }
 
  /*Setting the style for second division "main2* of body section*/
@@ -225,10 +236,10 @@ src:url('FREAKY HALLOWEEN.otf');
     background-repeat:no-repeat;
     background-size:100% 100%;
     margin:0;
-    padding:0;
+    padding:1rem;
     opacity:0.8;
     text-align:center;
-    overflow:hidden;
+    overflow:auto;
  }
 
  .main2 h2 {
@@ -236,13 +247,15 @@ src:url('FREAKY HALLOWEEN.otf');
     font-size:3rem;
     font-family:'Halloween Too', 'Times New Roman', serif;
     margin:0;
-    padding:2rem; 
+    padding:2rem;
+    text-shadow:0.2rem 0.0rem black;
  }
 
  .main2 div {
     color:white;
     font-weight:bold;
     font-size:2.5rem;
+    text-shadow:0.1rem 0.1rem black;
  }
 
  .main2 ol {
@@ -261,8 +274,10 @@ src:url('FREAKY HALLOWEEN.otf');
     background-repeat:no-repeat;
     background-size:100% 100%;
     opacity:0.8;
-    padding:0.8rem;
+    margin:0;
+    padding:1rem;
     color:white;
+    overflow:auto;
     text-align:center;
  }
 
@@ -270,223 +285,115 @@ src:url('FREAKY HALLOWEEN.otf');
     color:coral;
     font-size:3rem;
     font-family:'Halloween Too', 'Times New Roman', serif;
+    text-shadow:0.2rem 0.0rem black;
+    margin:0;
+    padding:2rem;
  }
 
- /*Setting the style of form label*/
+ /*Setting the style for the form */
+
  .main3 form label {
-    font-size:2rem;
-    display:inline-block;
-    text-align:center;
- }
- .main3 .mradio {
-    display:inline-block;
-    width:100px;
- }
- .main3 .fradio {
-    display:inline-block;
-    width:100px;
- }
+   font-size:1.5rem;
+   display:block;
+   text-align:center;
+   color:red;
+   font-weight:bold;
+   margin-top:1rem;
+}
 
- .fnameclass {
-    font-size:1rem;
-    padding:8px;
-    margin:5px;
-    width:400px;
-    margin-left:auto;
-    margin-right:auto;
-    display:inline-block;
- }
+.main3 .mradio {
+   display:inline-block;
+   width:100px;
+}
 
- .subbut {
-    padding:8px 16px;
-    font-size:2rem;
-    margin:10px 10px;
-    font-family:'Halloween Too', 'Times New Roman', serif;
- }
+.main3 .fradio {
+   display:inline-block;
+   width:100px;
+}
 
- .res {
-    padding:8px 16px;
-    font-size:2rem;
-    margin:10px 10px;
-    font-family:'Halloween Too', 'Times New Roman', serif;
- }
+.fnameclass {
+   font-size:1rem;
+   padding:0.4rem;
+   margin-top:1rem;
+   margin-bottom:1rem;
+   width:400px;
+   display:block;
+   margin:auto;
+}
+
+input[type=submit], input[type=reset] {
+   padding:0.5rem 1.6rem;
+   font-size:1.5rem;
+   margin:0.5rem 1rem;
+   font-family:'Halloween Too', 'Times New Roman', serif;
+}
+
+.main3 form input:focus {
+   background-color:coral;
+}
 
 /*------------------------------------------------------*/
  /*Setting the style for the body section of history.html*/
  /*-----------------------------------------------------*/
 
 
- /*Setting the style for first division "his1" of body section*/
- .his1 {
-    background-image:url('Images/Children-Halloween-costumes.webp');
-    background-repeat:no-repeat;
-    background-size:100% 100%;
-    height:800px;
-    width:100%;
-    padding:0;
+ /*Setting the style for all division of body section*/
+ .his1, .his2, .his3, .his4, .his5, .his6 {
+    padding:1rem;
     margin:0;
-    opacity:0.8;
-    word-wrap:break-word;
+    text-align:center;
 }
 
-
-.his11 h1 {
-font-family:'Halloween Too', 'Times New Roman', serif;
-font-size:100px;
-color:white;
-text-align:center;
-margin:0;
-padding:0;
-text-shadow:5px 5px grey;
-}
-.his11 h2 {
-color:orange;
-text-align:center;
-line-height:40px;
+ h1 {
+   font-size:5rem;
+   font-family:"Halloween Too", "Times New Roman", serif;
+   color:white;
+   text-shadow:0.4rem 0.3rem #111, 0.5rem 0.4rem grey;
+   margin:0;
+   padding:0;
 }
 
-/*Setting the style for second division "his2" of body section*/
-.his2 {
-    background-image:url('Images/history2.jpg');
-    background-repeat:no-repeat;
-    background-size:100% 100%;
-    height:800px;
-    width:100%;
-    padding:0;
-    margin:0;
-
+ h2 {
+   font-size:3rem;
+   font-family:"Halloween Too", "Times New Roman", serif;
+   color:coral;
+   text-shadow:0.2rem 0.0rem black;
+   margin:0;
+   padding:2rem;
 }
 
-.his21 h1 {
-font-family:'Halloween Too', 'Times New Roman', serif;
-font-size:100px;
-color:white;
-text-align:center;
-margin:0;
-padding:0;
-text-shadow:5px 5px grey;
-}
-.his21 h2 {
-color:white;
-text-align:center;
-line-height:40px;
-text-shadow:3px 0px red, 4px 3px blue;
+ p {
+   font-size:2rem;
+   font-family:'Halloween Too', 'Times New Roman', serif;
+   color:red;
+   text-shadow: 0.1rem 0.1rem black;
 }
 
-/*Setting the style for third division "his3" of body section*/
-.his3 {
-    background-image:url('Images/history1.jpg');
-    background-repeat:no-repeat;
-    background-size:100% 100%;
-    height:800px;
-    width:100%;
-    padding:0;
-    margin:0;
-
+.hisimg {
+   width:70vw;
 }
 
-.his31 h1 {
-font-family:'Halloween Too', 'Times New Roman', serif;
-font-size:100px;
-color:white;
-text-align:center;
-margin:0;
-padding:0;
-text-shadow:5px 5px grey;
-}
-.his31 h2 {
-color:white;
-text-align:center;
-line-height:40px;
-text-shadow:3px 0px red, 4px 3px blue;
+.hisimg1 {
+   width:90vw;
 }
 
-/*Setting the style for fourth division "his4" of body section*/
-.his4 {
-    background-image:url('Images/celebrate.jpg');
-    background-repeat:no-repeat;
-    background-size:100% 100%;
-    height:800px;
-    width:100%;
-    padding:0;
-    margin:0;
+hr {
+   width:80%;
+   border:5px solid grey;
+   border-radius:3px;
 }
 
 /*Setting the style for the image at topright corner of page*/
 .his4 .img2 {
 position:fixed;
+width:10%;
+height:20%;
 top:0;
 right:0;
 z-index:1;
 }
 
-.his41 h1 {
-font-family:'Halloween Too', 'Times New Roman', serif;
-font-size:100px;
-color:white;
-text-align:center;
-margin:0;
-padding:0;
-text-shadow:5px 5px grey;
-}
-.his41 h2 {
-color:white;
-text-align:center;
-line-height:40px;
-text-shadow:3px 0px red, 4px 3px blue;
-}
 
-/*Setting the style for five division "his5" of body section*/
-.his5 {
-    background-image:url('Images/halloween-usa.jpg');
-    background-repeat:no-repeat;
-    background-size:100% 100%;
-    height:800px;
-    width:100%;
-    padding:0;
-    margin:0;
-
-}
-
-.his51 h1 {
-font-family:'Halloween Too', 'Times New Roman', serif;
-font-size:100px;
-color:white;
-text-align:center;
-margin:0;
-padding:0;
-text-shadow:5px 5px grey;
-}
-.his51 h2 {
-color:white;
-text-align:center;
-line-height:40px;
-text-shadow:3px 0px red, 4px 3px blue;
-}
-
-/*Setting the style for the sixth division "his6* of body section*/
-
-.his6 h1 {
-font-family:'Halloween Too', 'Times New Roman', serif;
-font-size:100px;
-color:black;
-text-align:center;
-margin:0;
-padding:0;
-height:200px;
-width:auto;
-text-shadow:3px 3px darkgrey;
-}
-
-.his61 {
-background-image:url('Images/visual-history.jpg');
-background-repeat:no-repeat;
-background-size:100% 100%;
-height:1500px;
-width:100%;
-margin:0;
-padding:0;
-}
 
 /*------------------------------------------------------*/
  /*Setting the style for the body section of previouscontest.html*/
@@ -498,84 +405,83 @@ padding:0;
     background-image:url('Images/contest-1.jpg');
     background-repeat:no-repeat;
     background-size:100% 100%;
-    width: 100%;
-    height:auto;
     opacity:0.9;
     margin:0;
     padding:0;
     flex:1;
+    text-align:center;
+    display:flex;
+    flex-wrap:wrap;
+    flex-direction:column;
  }
 
- .contest1::after {
-    content:"";
-    clear:both;
-    display:table;
+ .contest1 > h1 {
+   margin:0;
+   padding:1rem;
  }
 
+ 
 
  /*Setting the style for the "sidenav" of body section*/
- .sidenav {
-    float:left;
-    width:25%;
-    height:85vh;
- }
- .sidenav ul {
-        list-style-type:none;
-        margin:0;
-        padding:0;
-        display:inline-block;
- }
- .sidenav ul li a {
+ 
+
+ .sidenav a {
     display:inline-block;
     text-decoration:none;
-    margin:20px 20px 20px 0px;
-    padding:30px 90px;
+    padding:1.5rem;
     color:white;
     font-weight:bold;
-    font-size:20px;
+    font-size:1.5rem;
     background-color:#333;
-    border-top-right-radius:20px;
-    border-bottom-right-radius:20px;
-    margin-left:-80px;
+    border-radius:1rem;
  }
- .sidenav ul li a:hover {
-    margin-left:0px;
+ 
+ .sidenav a:hover {
     color:black;
     background-color:#f1f1f1;
-    border:2px solid black;
  }
 
  /*Setting the style for the div class "winner" and also its inside 3 divs*/
+
  .winner {
-    float:left;
-    width:75%;
-    overflow:hidden;
+   padding:1rem;
+   display:flex;
+   flex-wrap:wrap;
+   gap:2rem;
+   justify-content:center;
+   align-items:center;
  }
 
- .winner h1 {
-    color:white;
-    text-align:center;
- }
-
- .winner1, .winner2, .winner3 {
+ .container {
     background-color:#333;
     width:400px;
     height:450px;
     border:2px solid black;
-    float:left;
-    margin:20px;
     text-align:center;
     font-weight:bold;
-    font-size:20px;
-    color:white;
     text-shadow:1px 1px black;
-    box-shadow:8px 8px 8px 8px rgba(144,144,144,1);
+    box-shadow:3px 3px 3px 3px rgba(144,144,144,1);
  }
- #win1, #win2, #win3 {
-    width: 100%;
-    height:80%;
-    border:none;
+
+ .image {
+   height:80%;
  }
+ 
+ .winner img {
+   width: 100%;
+   height:100%;
+}
+
+ .winner p {
+   height:20%;
+   padding:0.5rem;
+   font-size:1rem;
+   font-family:"Times New Roman", serif;
+   color:white;
+   margin:0;
+ }
+
+ 
 
  /*------------------------------------------------------*/
  /*Setting the style for the body section of store.html*/
@@ -586,54 +492,60 @@ padding:0;
     background-image:url('Images/store.jpg');
     background-repeat:no-repeat;
     background-size:100% 100%;
-    width: 100%;
-    height:790px;
     opacity:0.9;
     margin:0;
-    padding:0;
+    padding:1rem;
     flex:1;
+    text-align:center;
+    display:flex;
+    flex-direction:column;
+    flex-wrap:wrap;
  }
 
  .store1 h1 {
-    font-size:60px;
+    font-size:5rem;
     font-family:'Halloween Too', 'Times New Roman', serif;
-    text-align:center;
     margin:0;
+    padding:1rem;
     color:white;
-    text-shadow:2px 2px black;
+    text-shadow:0.4rem 0.3rem #111, 0.5rem 0.4rem grey;
  }
 
  /*Setting the style of 8 divs that contain the categories' images*/
- .categories::after {
-    content:"";
-    clear:both;
-    display:table;
+ .categories {
+   display:flex;
+   flex-wrap:wrap;
+   gap:2rem;
+   justify-content:center;
+   align-items:center;
  }
+
 .categories1 {
-    float:left;
-}
-
-
-
-.categories1 p {
-    color:white;
-    font-size:20px;
-    font-weight:bold;
-    text-align:center;
-    padding:10px;
-    margin:0;
-    text-shadow:1px 1px grey,2px 2px black;
-}
-.categories1 {
-    width:20%;
-    height:200px;
+    width:300px;
+    height:350px;
     border:2px solid grey;
-    margin:20px;
+    background-color:#333;
 }
+
 .categories1 img {
     width:100%;
-    height:100%;
+    height:80%;
 }
+
+.categories1 p {
+    font-weight:bold;
+    padding:1rem;
+    margin:0;
+}
+
+.categories1:hover {
+   border:4px solid coral;
+}
+
+.categories1:hover p {
+   color:coral;
+}
+
 
 
 
@@ -668,7 +580,7 @@ padding:0;
     font-size:2rem;
     color:white;
     font-family:'Times New Roman', serif;
-    margin:0;
+    margin:10px;
     padding:0;
     text-shadow:0.1rem 0.1rem black;
  }
@@ -689,19 +601,19 @@ padding:0;
     background-image:url('Images/contact.jpg');
     background-repeat:no-repeat;
     background-size:100% 100%;
-    width:100%;
     opacity:0.9;
     text-align:center;
     flex:1;
-    padding:20px;
+    padding:1rem;
  }
+
  .contact1 h1 {
-    font-size:5vw;
+    font-size:5rem;
     font-family:"Halloween Too", "Times New Roman", serif;
     text-align:center;
     color:white;
-    text-shadow:0.2vw 0.2vw grey;
-    margin:10px;
+    text-shadow:0.4rem 0.3rem #111, 0.5rem 0.4rem grey;
+    padding:1rem;
  }
 
  /*Setting the style for the form in division "contact1"*/
@@ -713,15 +625,14 @@ padding:0;
 
  /*Setting the style of form label*/
  .contact1 form label {
-    font-size:25px;
-    width:350px;
-    display:inline-block;
+    font-size:1.5rem;
+    display:block;
     color:white;
  }
 
  .contactinput {
-    font-size:20px;
-    padding:8px;
+    font-size:1rem;
+    padding:0.4rem;
     margin:5px;
     width:300px;
     margin-left:auto;
@@ -730,11 +641,12 @@ padding:0;
  }
 
  .contact1 #review {
+   width:350px;
     resize:none;
  }
 
  .subbut {
-    padding:8px 16px;
-    font-size:35px;
+    padding:0.5rem 1.6rem;
+    font-size:2rem;
     font-family:'Halloween Too', 'Times New Roman', serif;
  }
