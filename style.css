@@ -584,6 +584,24 @@ z-index:1;
     padding:0;
     text-shadow:0.1rem 0.1rem black;
  }
+ 
+/*Setting the style for the Google Map*/
+ .map1 {
+   overflow:hidden;
+   padding-bottom:40vh;
+   width:40%;
+   margin:auto;
+   position:relative;
+   height:0;
+ }
+
+ .map1 iframe {
+   left:0;
+   top:0;
+   height:100%;
+   width:100%;
+   position:absolute;
+ }
 
 
 
