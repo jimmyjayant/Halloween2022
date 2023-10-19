@@ -1,6 +1,8 @@
+/*
 window.onload = function() {
     document.getElementById("audio").load();
 }
+*/
 
 const x = document.getElementById("win1");
 const y = document.getElementById("win2");
