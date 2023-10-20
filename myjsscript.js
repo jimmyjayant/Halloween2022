@@ -1,5 +1,11 @@
 window.onload = function() {
-    document.getElementById('audio').load();
+    const active = "https://jimmyjayant.github.io/Halloween2022/";
+    const active1 = "https://jimmyjayant.github.io/Halloween2022/index.html";
+    
+    if((window.location.href == active) || (window.location.href == active1))
+    {
+        document.getElementById('audio').load();
+    }
 }
 
 
