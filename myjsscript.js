@@ -1,10 +1,7 @@
 window.onload = function() {
-    if(())
-    {
-        document.getElementById('audio').load();
-    }
+    const audio = new Audio("audio/scream.mp3");
+    audio.play();
 }
-
 
 const x = document.getElementById("win1");
 const y = document.getElementById("win2");
