@@ -379,8 +379,11 @@ body .store1 {
 /*Setting the style for the form */
 
 .main3 form {
-   width:80%;
-   margin:0 auto;
+   display:flex;
+   flex-direction:column;
+   padding:1rem;
+   position:relative;
+   z-index:1;
 }
 
 .main3 form label {
@@ -388,11 +391,13 @@ body .store1 {
    display:block;
    text-align:center;
    color:red;
-   /*font-weight:bold;*/
    font-family:'Halloween Too', 'Times New Roman', serif;
    margin-top:1rem;
 }
 
+.main3 form :is(.maleradio, .femaleradio) {
+   padding:0.5em;
+}
 
 .main3 .mradio {
    display:inline-block;
@@ -404,22 +409,21 @@ body .store1 {
    width:100px;
 }
 
-
 .fnameclass {
-   /*font-size:clamp(0.5rem, 0.8rem + 2vw, 1rem);*/
    padding:0.4rem;
-   margin-top:1rem;
-   margin-bottom:1rem;
-   width:clamp(10rem + 1vw, 20rem + 10vw, 600px);
-   display:block;
-   margin:auto;
+   margin:1rem;
+   width:clamp(50%, 80%, 800px);
+   align-self:center;
 }
 
 input[type=submit], input[type=reset] {
-   padding:0.5rem 1.6rem;
+   padding:0.3em 0.6em;
    font-size:clamp(1rem, 1rem + 2vw, 2.5rem);
    margin:0.5rem 1rem;
    font-family:'Halloween Too', 'Times New Roman', serif;
+   flex-grow:0;
+   align-self:center;
+   cursor:pointer;
 }
 
 .main3 form input:focus {

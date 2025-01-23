@@ -25,7 +25,7 @@ window.addEventListener("resize", () => {
 });
 
 
-if(window.location.pathname.includes("history.html"))
+if(window.location.pathname.includes("previouscontest.html"))
 {
     const x = document.getElementById("win1");
     const y = document.getElementById("win2");
