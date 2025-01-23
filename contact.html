@@ -8,6 +8,10 @@
         <meta name="keywords" content="w3schools, halloween, project, jimmy jayant,github">
         <link rel="icon" href="Images/favicon.ico">
         <link rel="stylesheet" href="style.css">
+        <script src="myjsscript.js"></script>
+        <noscript>
+            Your web browser does not support JavaScript. 
+        </noscript>
         <title>
             The HalloweenCon 
         </title>
@@ -20,14 +24,25 @@
         </style>
     </head>
     <body>
-        <div class="hornavbar">
-            <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="history.html">History</a></li>
-            <li><a href="previouscontest.html">Previous Contest</a></li>
-            <li><a href="store.html">Store</a></li>
-            <li><a href="about.html">About</a></li>
-            </ul>
+        <div class="header">
+            <div class="hamburgermenu" onclick="showmenu()">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+
+            <div class="heading">
+                The HalloweenCon<sup>&trade;</sup> 
+            </div>
+        </div>
+
+        <div class="navbar">
+            <a href="#" onclick="hidemenu()" id="closemenu"><span>&times;</span></a>
+            <a href="index.html">Home</a>
+            <a href="history.html">History</a>
+            <a href="previouscontest.html">Previous Contest</a>
+            <a href="store.html">Store</a>
+            <a href="about.html">About</a>
         </div>
 
         <div class="contact1">
@@ -62,18 +77,15 @@
         </div>
 
         <div class="footer">
-            <ul>
-                <li><a href="#">Privacy</a></li>
-                <li><a href="#">Terms of use</a></li>
-                <li><a href="#">Trademarks</a></li>
-                <li><a href="#">&copy;HalloweenCon 2022</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-            <ul>
-                <li><a href="https://www.facebook.com" target="_blank"><img src="Images/facebook.png" width="20" height="20" alt="Facebook Logo"></a></li>
-                <li><a href="https://www.twitter.com" target="_blank"><img src="Images/twitter.png" width="20" height="20" alt="Twitter Logo"></a></li>
-                <li><a href="https://www.instagram.com" target="_blank"><img src="Images/instagram.png" width="20" height="20" alt="Instagram Logo"></a></li>
-            </ul>
+            <a href="#">Privacy</a>
+            <a href="#">Terms of use</a>
+            <a href="#">Trademarks</a>
+            <a href="#">&copy;HalloweenCon 2022</a>
+            <a href="contact.html">Contact</a>
+    
+            <a href="https://www.facebook.com" target="_blank"><img src="Images/facebook.png" width="20" height="20" alt="Facebook Logo"></a>
+            <a href="https://www.twitter.com" target="_blank"><img src="Images/twitter.png" width="20" height="20" alt="Twitter Logo"></a>
+            <a href="https://www.instagram.com" target="_blank"><img src="Images/instagram.png" width="20" height="20" alt="Instagram Logo"></a>
         </div>
     
     </body>

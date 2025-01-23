@@ -8,6 +8,10 @@
         <meta name="keywords" content="w3schools, halloween, project, jimmy jayant,github">
         <link rel="icon" href="Images/favicon.ico">
         <link rel="stylesheet" href="style.css">
+        <script src="myjsscript.js"></script>
+        <noscript>
+            Your web browser does not support JavaScript. 
+        </noscript>
         <title>
             The HalloweenCon 
         </title>
@@ -16,18 +20,28 @@
             display:flex;
             flex-direction:column;
          }
-
         </style>
     </head>
     <body>
-        <div class="hornavbar">
-            <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="history.html">History</a></li>
-            <li><a href="previouscontest.html">Previous Contest</a></li>
-            <li><a href="store.html">Store</a></li>
-            <li><a href="about.html">About</a></li>
-            </ul>
+        <div class="header">
+            <div class="hamburgermenu" onclick="showmenu()">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+
+            <div class="heading">
+                The HalloweenCon<sup>&trade;</sup> 
+            </div>
+        </div>
+
+        <div class="navbar">
+            <a href="#" onclick="hidemenu()" id="closemenu"><span>&times;</span></a>
+            <a href="index.html">Home</a>
+            <a href="history.html">History</a>
+            <a href="previouscontest.html">Previous Contest</a>
+            <a href="store.html">Store</a>
+            <a href="about.html">About</a>
         </div>
 
         <div class="about1">
@@ -36,52 +50,35 @@
             </h1>
 
             <p>
-                The HalloweenCon&trade; is an organization based in Tehsil-Samalkha, District-Panipat, India. 
+                The HalloweenCon&trade; is a fictional organization. 
                 <br>
-                Its owner is Mr. Jimmy Jayant. 
+                <br>
+                This was created as part of a Halloween Contest from W3Schools.com on the Halloween Eve in October 2022. 
+                <br>
+                <br>
+                The website was created by Mr. Jimmy Jayant.
+                <br>
                 <br>
                 Its main purpose is to organize contest on the eve of Halloween. 
                 <br>
+                <br>
                 Also the organization have a store that deals in Halloween merchandise. 
                 <br>
+                <br>
                 The organization also have the online presence on social networking platform like facebook, twitter, etc. and also on Instagram. 
-                <br>
-                <br>
-
-                <address>
-                    Office Number-123 
-                    <br>
-                    Tehsil-Samalkha 
-                    <br>
-                    District-Panipat 
-                    <br>
-                    Pincode-132101 
-                    <br>
-                    State-Haryana 
-                    <br>
-                    Country-India 
-                </address>
             </p>
-        
-          <div class="map1">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6962.845642744833!2d76.99863260415073!3d29.240527200000006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390dc92b2b1caca3%3A0xdb0dfc4a90d827ce!2sSamalkha%20Ward%20Number%207!5e0!3m2!1sen!2sin!4v1678599908611!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-          </div>
-           </div>
+        </div>
 
         <div class="footer">
-            <ul>
-                <li><a href="#">Privacy</a></li>
-                <li><a href="#">Terms of use</a></li>
-                <li><a href="#">Trademarks</a></li>
-                <li><a href="#">&copy;HalloweenCon 2022</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-            <ul>
-                <li><a href="https://www.facebook.com" target="_blank"><img src="Images/facebook.png" width="20" height="20" alt="Facebook Logo"></a></li>
-                <li><a href="https://www.twitter.com" target="_blank"><img src="Images/twitter.png" width="20" height="20" alt="Twitter Logo"></a></li>
-                <li><a href="https://www.instagram.com" target="_blank"><img src="Images/instagram.png" width="20" height="20" alt="Instagram Logo"></a></li>
-            </ul>
+            <a href="#">Privacy</a>
+            <a href="#">Terms of use</a>
+            <a href="#">Trademarks</a>
+            <a href="#">&copy;HalloweenCon 2022</a>
+            <a href="contact.html">Contact</a>
+
+            <a href="https://www.facebook.com" target="_blank"><img src="Images/facebook.png" width="20" height="20" alt="Facebook Logo"></a>
+            <a href="https://www.twitter.com" target="_blank"><img src="Images/twitter.png" width="20" height="20" alt="Twitter Logo"></a>
+            <a href="https://www.instagram.com" target="_blank"><img src="Images/instagram.png" width="20" height="20" alt="Instagram Logo"></a>
         </div>
     </body>
-
 </html>
