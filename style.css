@@ -217,16 +217,6 @@ body .store1 {
 }
 }
 
-@media screen and (min-width:600px) {
-
-/*Setting the height of images of history.html*/
-
-.hisimg {
-   height:70vh;
-}
-}
-
-
 @media screen and (max-width:250px) {
    .heading {
       text-align:left;
@@ -251,7 +241,8 @@ body .store1 {
    position:relative;
    background-image:url('Images/halloween-back-1.png');
    background-repeat:no-repeat;
-   background-size:100% 100%;
+   background-size:cover;
+   background-position:center;
    /*opacity:0.8;*/
    padding:1rem;
    margin:0;
@@ -312,7 +303,8 @@ body .store1 {
 .main2 {
    background-image:url('Images/rule.jpg');
    background-repeat:no-repeat;
-   background-size:100% 100%;
+   background-size:cover;
+   background-position:center;
    margin:0;
    padding:1rem;
    /*opacity:0.8;*/
@@ -358,7 +350,8 @@ body .store1 {
 .main3 {
    background-image:url('Images/costume-contest.jpg');
    background-repeat:no-repeat;
-   background-size:100% 100%;
+   background-size:cover;
+   background-position:center;
    /*opacity:0.8;*/
    margin:0;
    padding:1rem;
@@ -418,7 +411,7 @@ body .store1 {
 
 input[type=submit], input[type=reset] {
    padding:0.3em 0.6em;
-   font-size:clamp(1rem, 1rem + 2vw, 2.5rem);
+   font-size:clamp(1rem, 1rem + 2vw, 2rem);
    margin:0.5rem 1rem;
    font-family:'Halloween Too', 'Times New Roman', serif;
    flex-grow:0;
@@ -443,36 +436,35 @@ input[type=submit], input[type=reset] {
 }
 
 h1 {
-   font-size:2rem;
+   font-size:clamp(2rem, 5vw, 5rem);
    font-family:"Halloween Too", "Times New Roman", serif;
    color:white;
    /*text-shadow:0.4rem 0.3rem #111, 0.5rem 0.4rem grey;*/
-   margin:0;
+   margin:0.5rem 0;
    padding:0;
 }
 
 h2 {
-   font-size:1.5rem;
+   font-size:clamp(1.5rem, 3vw, 4rem);
    font-family:"Halloween Too", "Times New Roman", serif;
    color:coral;
    text-shadow:0.2rem 0.0rem black;
-   margin:0;
-   padding:2rem;
+   margin:0.5rem 0;
+   padding:0;
 }
 
 p {
-   font-size:1rem;
+   font-size:clamp(1rem, 1rem + 2vw, 2.5rem);
    font-family:'Halloween Too', 'Times New Roman', serif;
    color:red;
    text-shadow: 0.1rem 0.1rem black;
 }
 
-.hisimg {
-   width:70vw;
-}
-
-.hisimg1 {
-   width:90vw;
+.hisimg, .hisimg1 {
+   width:80%;
+   aspect-ratio:3/2;
+   margin-left:auto;
+   margin-right:auto;
 }
 
 hr {
@@ -485,8 +477,8 @@ hr {
 
 .his4 .img2 {
    position:fixed;
-   width:10%;
-   height:20%;
+   width:5rem;
+   aspect-ratio:1/1;
    top:0;
    right:0;
    z-index:4;
