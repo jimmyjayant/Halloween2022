@@ -19,7 +19,10 @@
             body {
                 display:flex;
                 flex-direction:column;
-                flex-wrap:wrap;
+            }
+
+            .contest1 {
+                flex:1;
             }
         </style>
     </head>
@@ -50,51 +53,53 @@
             <h1>
                 Pics of Winners 
             </h1>
-                <div class="sidenav">
-                        <a href="#" onclick="win2018()">2018</a>
-                        <a href="#" onclick="win2019()">2019</a>
-                        <a href="#" onclick="win2020()">2020</a>
-                        <a href="#" onclick="win2021()">2021</a>
-                        <a href="#" onclick="win2022()">2022</a>
-                </div>
-                <div class="winner">
+
+            <div class="sidenav">
+                <a href="#" onclick="win2018()">2018</a>
+                <a href="#" onclick="win2019()">2019</a>
+                <a href="#" onclick="win2020()">2020</a>
+                <a href="#" onclick="win2021()">2021</a>
+                <a href="#" onclick="win2022()">2022</a>
+            </div>
+
+            <div class="winner">
+                
+                <div class="container">
+                    <div class="image">
+                        <img id="win1" alt="Pic of Contest 1st Winner">
+                    </div>
                     
-                    <div class="container">
-                        <div class="image">
-                          <img id="win1" alt="Pic of Contest 1st Winner">
-                        </div>
-                        
-                          <p>
-                            1st Winner
-                             <br>
-                            Prize - $1000
-                          </p>          
-                    </div>
-
-                    <div class="container">
-                        <div class="image">
-                         <img id="win2" alt="Pic of Contest 2nd Winner">
-                        </div>
-                       
-                        <p>
-                          2nd Winner
-                          <br>
-                          Prize - $500
-                        </p>
-                    </div>
-
-                    <div class="container">
-                        <div class="image">
-                         <img id="win3" alt="Pic of Contest 3rd Winner">
-                        </div>
-                        
-                          <p>
-                            3rd Winner
+                    <p>
+                        1st Winner
                             <br>
-                            Prize - $100
-                          </p>
-                    </div>
+                        Prize - $1000
+                    </p>          
                 </div>
+
+                <div class="container">
+                    <div class="image">
+                        <img id="win2" alt="Pic of Contest 2nd Winner">
+                    </div>
+                    
+                    <p>
+                        2nd Winner
+                        <br>
+                        Prize - $500
+                    </p>
+                </div>
+
+                <div class="container">
+                    <div class="image">
+                        <img id="win3" alt="Pic of Contest 3rd Winner">
+                    </div>
+                    
+                    <p>
+                        3rd Winner
+                        <br>
+                        Prize - $100
+                    </p>
+                </div>
+            </div>
         </div>
 
         <div class="footer">

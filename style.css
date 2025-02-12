@@ -3,6 +3,7 @@
 html {
    margin:0;
    padding:0;
+   min-height:100vh;
 }
 
 /*Setting body margin to 0*/
@@ -189,17 +190,13 @@ body {
 .his1, .his2, .his3, .his4, .his5, .his6 {
    height:auto;
    overflow:hidden;
-}   
-
-.winner {
-   flex-direction:column;
 }
-
+/*
 .winner .container {
    width:200px;
    height:250px;
 }
-
+*/
 /*Setting breakpoints for store.html*/
 
 body .store1 {
@@ -493,15 +490,15 @@ hr {
 .contest1 {
    background-image:url('Images/contest-1.jpg');
    background-repeat:no-repeat;
-   background-size:100% 100%;
-   opacity:0.9;
+   background-size:cover;
+   background-position:center;
    margin:0;
-   padding:0;
-   flex:1;
+   padding:1rem;
    text-align:center;
    display:flex;
    flex-wrap:wrap;
    flex-direction:column;
+   width:100%;
 }
 
 .contest1 > h1 {
@@ -514,7 +511,8 @@ hr {
 .sidenav a {
    display:inline-block;
    text-decoration:none;
-   padding:1.5rem;
+   padding:1rem;
+   margin:0.3rem;
    color:white;
    font-weight:bold;
    font-size:1.5rem;
@@ -536,12 +534,19 @@ hr {
    gap:2rem;
    justify-content:center;
    align-items:center;
+   width:100%;
+   height:-webkit-max-content;
+   height:-moz-max-content;
+   height:max-content;
 }
 
 .container {
    background-color:#333;
-   width:400px;
-   height:450px;
+   /*min-width:250px;
+   width:30%;*/
+   width:clamp(250px, 30%, 800px);
+   aspect-ratio:2/3;
+   margin:1rem 0;
    border:2px solid black;
    text-align:center;
    font-weight:bold;
@@ -553,13 +558,14 @@ hr {
    height:80%;
 }
 
-.winner img {
+.image img {
    width: 100%;
    height:100%;
 }
 
-.winner p {
+.container p {
    height:20%;
+   line-height:1.5;
    padding:0.5rem;
    font-size:1rem;
    font-family:"Times New Roman", serif;
@@ -588,12 +594,7 @@ hr {
 }
 
 .store1 h1 {
-   font-size:5rem;
-   font-family:'Halloween Too', 'Times New Roman', serif;
-   margin:0;
-   padding:1rem;
-   color:white;
-   text-shadow:0.4rem 0.3rem #111, 0.5rem 0.4rem grey;
+   text-shadow:0.1rem 0.1rem #111, 0.2rem 0.2rem grey;
 }
 
 /*Setting the style of 8 divs that contain the categories' images*/
@@ -620,7 +621,7 @@ hr {
 
 .categories1 p {
    font-weight:bold;
-   padding:1rem;
+   padding:0;
    margin:0;
 }
 
