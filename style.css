@@ -507,7 +507,7 @@ hr {
 } 
 
 /*Setting the style for the "sidenav" of body section*/
-
+/*
 .sidenav a {
    display:inline-block;
    text-decoration:none;
@@ -524,11 +524,11 @@ hr {
    color:black;
    background-color:#f1f1f1;
 }
-
+*/
 .winner2018, .winner2019, .winner2020, .winner2021, .winner2022 {
    display:none;
 }
-
+/*
 .sidenav a:active {
    color:red;
 }
@@ -552,7 +552,49 @@ hr {
 .sidenav:has(a:nth-child(5):active) + .winner .winner2022 {
    display:block;
 }
+*/
 
+.sidenav {
+   display:flex;
+   flex-wrap:wrap;
+   justify-content:center;
+}
+
+.sidenav label {
+   font-size:1rem;
+   background-color:#333;
+   color:white;
+   padding:1rem 2rem;
+   border-radius:10px;
+}
+
+.sidenav > div {
+   margin:1rem;
+}
+
+.sidenav input {
+   margin:1rem 0;
+}
+
+.sidenav:has(input[value="2018"]:checked) + .winner .winner2018 {
+   display:block;
+}
+
+.sidenav:has(input[value="2019"]:checked) + .winner .winner2019 {
+   display:block;
+}
+
+.sidenav:has(input[value="2020"]:checked) + .winner .winner2020 {
+   display:block;
+}
+
+.sidenav:has(input[value="2021"]:checked) + .winner .winner2021 {
+   display:block;
+}
+
+.sidenav:has(input[value="2022"]:checked) + .winner .winner2022 {
+   display:block;
+}
 
 /*Setting the style for the div class "winner" and also its inside 3 divs*/
 
