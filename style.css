@@ -525,6 +525,35 @@ hr {
    background-color:#f1f1f1;
 }
 
+.winner2018, .winner2019, .winner2020, .winner2021, .winner2022 {
+   display:none;
+}
+
+.sidenav a:active {
+   color:red;
+}
+
+.sidenav:has(a:nth-child(1):active) + .winner .winner2018 {
+   display:block;
+}
+
+.sidenav:has(a:nth-child(2):active) + .winner .winner2019 {
+   display:block;
+}
+
+.sidenav:has(a:nth-child(3):active) + .winner .winner2020 {
+   display:block;
+}
+
+.sidenav:has(a:nth-child(4):active) + .winner .winner2021 {
+   display:block;
+}
+
+.sidenav:has(a:nth-child(5):active) + .winner .winner2022 {
+   display:block;
+}
+
+
 /*Setting the style for the div class "winner" and also its inside 3 divs*/
 
 .winner {

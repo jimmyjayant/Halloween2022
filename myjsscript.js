@@ -24,7 +24,7 @@ window.addEventListener("resize", () => {
     }
 });
 
-
+/*
 if(window.location.pathname.includes("previouscontest.html"))
 {
     const x = document.getElementById("win1");
@@ -61,3 +61,4 @@ if(window.location.pathname.includes("previouscontest.html"))
         z.src = "Images/winner-2022.jpg";
     }    
 }
+*/
