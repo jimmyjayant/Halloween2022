@@ -156,9 +156,17 @@ body {
    width:calc(100vw - 50px);
    flex-direction:column;
    align-items:center;
-   z-index:1;
+   z-index:5;
    padding-top:1rem;
    background:#555;
+}
+
+.navbar:target {
+   display:block;
+}
+
+.navbar:not(:target) {
+   display:none;
 }
 
 #closemenu {

@@ -3,13 +3,13 @@
     audio.play();
 }*/
 
-/* The function showmenu() is associated with hamburgermenu icon on top left corner of webpage. When you click on the icon, the navbar displays. */
+/* The function showmenu() is associated with hamburgermenu icon on top left corner of webpage. When you click on the icon, the navbar displays. 
 function showmenu() {
     var navbar = document.getElementsByClassName("navbar")[0];
     navbar.style.display = "block";
 }
-
-/* The function hidemenu() is associated with X sign in the navbar below 600px screen size. When you click on the X sign, the navbar becomes hidden that is display none. */
+*/
+/* The function hidemenu() is associated with X sign in the navbar below 600px screen size. When you click on the X sign, the navbar becomes hidden that is display none. 
 function hidemenu() {
     var navbar = document.getElementsByClassName("navbar")[0];
     navbar.style.display = "none";
@@ -23,7 +23,7 @@ window.addEventListener("resize", () => {
         navbar.style.width = "";
     }
 });
-
+*/
 /*
 if(window.location.pathname.includes("previouscontest.html"))
 {
