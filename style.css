@@ -100,6 +100,11 @@ body {
    color:red;
 }
 
+/* The class is attached to the active link in navbar */
+.activeLink {
+   background-color:#111;
+}
+
 /*Setting the style for the last division "footer" of body section*/
 
 .footer {
@@ -133,93 +138,92 @@ body {
 /*Setting breakpoints for responsive web design*/
 
 @media screen and (max-width:600px) {
-.header {
-   display:flex;
-   flex-direction:row;
-   flex-wrap:nowrap;
-   position:relative;
-   margin:0;
-   padding:0;
-   background-color:#333;
-   width:100%;
-   min-width:250px;
-   z-index:3;
-}
+   body {
+      position:relative;
+   }
+   
+   .header {
+      display:flex;
+      flex-direction:row;
+      flex-wrap:nowrap;
+      position:relative;
+      margin:0;
+      padding:0;
+      background-color:#333;
+      width:100%;
+      min-width:250px;
+      z-index:3;
+   }
 
 /*Setting breakpoints for navigation bar*/
 
-.navbar {
-   position:absolute;
-   height:100%;
-   left:0;
-   display:none;
-   width:calc(100vw - 50px);
-   flex-direction:column;
-   align-items:center;
-   z-index:5;
-   padding-top:1rem;
-   background:#555;
-}
+   .navbar {
+      position:absolute;
+      height:100%;
+      left:0;
+      display:none;
+      width:calc(100vw - 50px);
+      flex-direction:column;
+      align-items:center;
+      z-index:5;
+      padding-top:1rem;
+      background:#555;
+   }
 
-.navbar:target {
-   display:block;
-}
+   .navbar:target {
+      display:block;
+   }
 
-.navbar:not(:target) {
-   display:none;
-}
+   .navbar:not(:target) {
+      display:none;
+   }
 
-#closemenu {
-   display:block;
-   text-align:right;
-}
+   #closemenu {
+      display:block;
+      text-align:right;
+   }
 
-.hamburger:hover {
-   cursor:pointer;
-}
+   .hamburger:hover {
+      cursor:pointer;
+   }
 
 /* Setting breakpoint for h1 heading in index.html */
 
-.main11 h1 {
-   display:none;
-}
+   .main11 h1 {
+      display:none;
+   }
 
 
 /*Setting breakpoints for footer*/
 
-.footer {
-   display:block;
-   position:relative;
-   z-index:2;
-}
+   .footer {
+      display:block;
+      position:relative;
+      z-index:2;
+   }
 
 /*Setting breakpoints for history.html 6 divisions*/
 
-.his1, .his2, .his3, .his4, .his5, .his6 {
-   height:auto;
-   overflow:hidden;
-}
-/*
-.winner .container {
-   width:200px;
-   height:250px;
-}
-*/
+   .his1, .his2, .his3, .his4, .his5, .his6 {
+      height:auto;
+      overflow:hidden;
+   }
+
 /*Setting breakpoints for store.html*/
 
-body .store1 {
-   background-repeat:repeat-y;
-   background-size:auto;
-}
+   body .store1 {
+      background-repeat:repeat-y;
+      background-size:auto;
+   }
 
-.categories {
-   flex-direction:column;
-}
+   .categories {
+      flex-direction:column;
+   }
 
-.categories .categories1 {
-   width:200px;
-   height:250px;
-}
+   .categories .categories1 {
+      width:200px;
+      height:250px;
+   }
 }
 
 @media screen and (max-width:250px) {
@@ -229,10 +233,10 @@ body .store1 {
 }
 
 @media screen and (max-width:480px) {
-.main2 ol {
-   text-align:left;
-   list-style-position:outside;
-}
+   .main2 ol {
+      text-align:left;
+      list-style-position:outside;
+   }
 }
 
 
@@ -248,7 +252,6 @@ body .store1 {
    background-repeat:no-repeat;
    background-size:cover;
    background-position:center;
-   /*opacity:0.8;*/
    padding:1rem;
    margin:0;
    overflow:auto;
@@ -296,12 +299,6 @@ body .store1 {
    color:red;
    text-shadow: 0.1rem 0.1rem black;
 }
-/*
-.main12 {
-   position:absolute;
-   inset:0;
-   background-color:rgba(0,0,0,0.1);
-}*/
 
 /*Setting the style for second division "main2* of body section*/
 
@@ -312,7 +309,6 @@ body .store1 {
    background-position:center;
    margin:0;
    padding:1rem;
-   /*opacity:0.8;*/
    text-align:center;
    overflow:auto;
 }
@@ -515,52 +511,10 @@ hr {
 } 
 
 /*Setting the style for the "sidenav" of body section*/
-/*
-.sidenav a {
-   display:inline-block;
-   text-decoration:none;
-   padding:1rem;
-   margin:0.3rem;
-   color:white;
-   font-weight:bold;
-   font-size:1.5rem;
-   background-color:#333;
-   border-radius:1rem;
-}
 
-.sidenav a:hover {
-   color:black;
-   background-color:#f1f1f1;
-}
-*/
 .winner2018, .winner2019, .winner2020, .winner2021, .winner2022 {
    display:none;
 }
-/*
-.sidenav a:active {
-   color:red;
-}
-
-.sidenav:has(a:nth-child(1):active) + .winner .winner2018 {
-   display:block;
-}
-
-.sidenav:has(a:nth-child(2):active) + .winner .winner2019 {
-   display:block;
-}
-
-.sidenav:has(a:nth-child(3):active) + .winner .winner2020 {
-   display:block;
-}
-
-.sidenav:has(a:nth-child(4):active) + .winner .winner2021 {
-   display:block;
-}
-
-.sidenav:has(a:nth-child(5):active) + .winner .winner2022 {
-   display:block;
-}
-*/
 
 .sidenav {
    display:flex;
@@ -621,8 +575,6 @@ hr {
 
 .container {
    background-color:#333;
-   /*min-width:250px;
-   width:30%;*/
    width:clamp(250px, 30%, 800px);
    aspect-ratio:2/3;
    margin:1rem 0;
@@ -721,8 +673,8 @@ hr {
 .about1 {
    background-image:url('Images/about.jpg');
    background-repeat:no-repeat;
-   background-size:100% 100%;
-   opacity:0.9;
+   background-size:cover;
+   background-position:center;
    margin:0;
    padding:1rem;
    text-align:center;
@@ -731,17 +683,18 @@ hr {
 }
 
 .about1 h1 {
-   font-size:5rem;
+   font-size:clamp(2rem, 5vw, 5rem);
+   font-family:'Halloween Too', 'Times New Roman', serif;
+   text-shadow:0.1rem 0.1rem #111, 0.2rem 0.2rem grey;
    color:white;
-   font-family:'Halloween Too', 'Times New Roman', serif; 
    margin:0;
    padding:0;
-   text-shadow:0.3rem 0.3rem #111, 0.4rem 0.4rem grey;
 }
+
 .about1 p, address {
-   font-size:2rem;
+   font-size:clamp(1rem, 1rem + 2vw, 2.5rem);
    color:white;
-   font-family:'Times New Roman', serif;
+   font-family:'Halloween Too', 'Times New Roman', serif;
    margin:10px;
    padding:0;
    text-shadow:0.1rem 0.1rem black;
@@ -756,19 +709,19 @@ hr {
 .contact1 {
    background-image:url('Images/contact.jpg');
    background-repeat:no-repeat;
-   background-size:100% 100%;
-   opacity:0.9;
+   background-size:cover;
+   background-position:center;
    text-align:center;
    flex:1;
    padding:1rem;
 }
 
 .contact1 h1 {
-   font-size:5rem;
+   font-size:clamp(2rem, 5vw, 5rem);
    font-family:"Halloween Too", "Times New Roman", serif;
    text-align:center;
    color:white;
-   text-shadow:0.4rem 0.3rem #111, 0.5rem 0.4rem grey;
+   text-shadow:0.1rem 0.1rem #111, 0.2rem 0.2rem grey;
    padding:1rem;
 }
 
@@ -784,6 +737,7 @@ hr {
 
 .contact1 form label {
    font-size:1.5rem;
+   font-family:'Halloween Too', 'Times New Roman', serif;
    display:block;
    color:white;
 }
@@ -805,7 +759,7 @@ hr {
 
 @media only screen and (max-width:600px) {
    /* Setting the z-index of animated spider to 0 so that navbar is shown above the spider and easy to navigate */
-.main1 #img1 {
-   z-index:0;
-}
+   .main1 #img1 {
+      z-index:0;
+   }
 }
